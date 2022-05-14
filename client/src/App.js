@@ -34,13 +34,13 @@ function App() {
   useEffect(() => {
     (async () => {
       setIsGlobalLoading(false);
-      /*window.addEventListener("load", async () => {
+      window.addEventListener("load", async () => {
         try {
         }
         catch(e) {
 
         }
-      });*/
+      });
     })();
 
   },[]);

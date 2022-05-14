@@ -103,8 +103,8 @@ export default function UserPanel() {
     const RewardsPhaseFinished = (props) => (
         <>
         <div className="two-line-label">
-            <div>Staking reward period finished</div>
-            <div>Please check back later for next phase</div>
+            <div>The first ever BNB Miner Eco-system, that combines a Treasury, P2E, NFTs and an Incubation program!</div>
+            <div>Please wait for next phase</div>
         </div><hr/>
         </>
     );
@@ -121,8 +121,8 @@ export default function UserPanel() {
             <Container className="square inner-container">
                 <br/>
                 {isNonZeroNumber(userDetails["rewardPerDay"])? <RewardsPhaseActive /> : <RewardsPhaseFinished/>}
-                <CardKeyValue label="Your staked" value={numberToFixed(userDetails["deposited"])} />
-                <CardKeyValue label="Your pending rewards" value={numberToFixed(userDetails["pending"])} />
+                <CardKeyValue label="Your staked bottles" value={numberToFixed(userDetails["deposited"])} />
+                <CardKeyValue label="Your pending h20" value={numberToFixed(userDetails["pending"])} />
                 
 
                 <br/><br/>
@@ -137,7 +137,7 @@ export default function UserPanel() {
                         <OverlayTrigger
                         placement="right"
                         overlay={userDetails["pending"] > 0 ? <Tooltip >Will also claim pending rewards</Tooltip> : <></>}>
-                            <Button onClick={deposit} >Stake</Button>
+                            <Button onClick={deposit} >Enter</Button>
                         </OverlayTrigger>
                     </div>
                 </div><br/>
@@ -153,7 +153,7 @@ export default function UserPanel() {
                         <OverlayTrigger
                         placement="right"
                         overlay={userDetails["pending"] > 0 ? <Tooltip >Will also claim pending rewards</Tooltip> : <></>}>
-                            <Button onClick={withdraw} >Unstake</Button>
+                            <Button onClick={withdraw} >Withdraw</Button>
                         </OverlayTrigger>
                     </div>
                 </div><br/>
@@ -162,7 +162,7 @@ export default function UserPanel() {
                     Pending {userDetails["rewSymbol"]} rewards: {userDetails["pending"]}
                 </div>
                 <div className="button-stretch">
-                    <Button onClick={claim} >Claim rewards</Button>
+                    <Button onClick={claim} >Drink Water</Button>
                 </div>
                 <br/>
                 </Container>

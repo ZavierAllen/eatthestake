@@ -1,5 +1,6 @@
+
 .App {
-  text-align: center;
+  text-align: flex;
   max-width: 1100px;
   margin: auto;
   
@@ -8,13 +9,12 @@
 
 .outerApp {
   font-family: 'Nunito', sans-serif;
-  color: white;
+  color: rgb(7, 194, 184);
 }
 
 body {
-  /*background-color: #555A64;*/
-  background-color: #2F2F2F;
-
+  background-color: #08158a;
+  background-color: #0dc5b6;
 }
 
 hr {
@@ -22,27 +22,28 @@ hr {
   height: 0.03rem !important;
 }
 
+
 .minimalistic-nav-bar {
-  display: flex;
-  background-color: #212529;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  display:  center;
+  background-color: #212729;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: .2rem;
   padding-right: .2rem;
   justify-content: space-between;
 }
 
 .minimalistic-nav-bar div:nth-of-type(2) {
-  font-size: 20px;
+  font-size: 50px;
   font-weight: 800;
   text-shadow: 1px 1px 2px black, 0 0 25px cyan, 0 0 5px darkcyan;
 }
 
 .minimalistic-nav-bar div:nth-of-type(3) {
-  width: 300px;
+  width: 1000px;
   text-align: end;
   margin-right: .2rem;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   align-items: center;
   display: flex;
@@ -52,11 +53,11 @@ hr {
 .inner-container {
   /*color: black;*/
   margin-top: 10px;
-  color: #33D3D2;
+  color: #33d3d3;
   background-color: #212529;
-  width: 38%;
+  width: 80%;
   border-radius: 20px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 50%);
 }
@@ -74,7 +75,7 @@ hr {
   text-align: start;
   width: 90%;
   margin: auto;
-  color: lightgrey;
+  color: rgb(28, 168, 179);
   font-weight: 300;
   padding-left: 10px;
 }
@@ -90,7 +91,7 @@ hr {
 }
 
 .btn:disabled {
-  background-color: #156667 ;
+  background-color: #3dd9db ;
   border-color: #156667 ;
 }
 
@@ -112,7 +113,7 @@ hr {
   font-size: 18px;
   font-weight: 600;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
 }
 
@@ -141,7 +142,7 @@ button:focus , button:active {
   border-bottom-right-radius: 0px;
   font-size: 18px;
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
-  /*text-shadow: 2px 2px 4px darkgrey;*/
+  text-shadow: 2px 2px 4px darkgrey;
 }
 
 

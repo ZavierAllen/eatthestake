@@ -17,16 +17,10 @@ export default function NavBar() {
         <>
             <div className="minimalistic-nav-bar">
                 <div>
-                <img
-                    alt=""
-                    src={require('../logo.png')}
-                    width="300px"
-                    height="27px"
-                    className="d-inline-block align-top"
-                />
+               
                 </div>
                 <div>
-                STAKE
+                        H20.io
                 </div>
                 <div>
                 {web3? <AddressView />: 'Not connected'}
